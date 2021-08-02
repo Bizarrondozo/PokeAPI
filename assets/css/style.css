@@ -6,10 +6,11 @@ body {
 .header {
     width: 100%;
     z-index: 1;
+    background-color: yellow;
 }
 
 .headerStyle {
-    color: aquamarine;
+    color: #d50000;
 }
 
 .datosPersonajes {
