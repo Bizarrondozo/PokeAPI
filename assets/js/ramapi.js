@@ -36,7 +36,7 @@ const paginacion = (data) => {
 
     let prevDisabled = "";
     let nextDisabled = "";
-    if (data.prev == null) {
+    if (data.previous == null) {
         prevDisabled = "disabled"
     } else {
         prevDisabled = "";
@@ -47,7 +47,7 @@ const paginacion = (data) => {
         nextDisabled = "";
     }
     let html = "";
-    html += `<li class="page-item ${prevDisabled}"><a class="page-link" onclick="getData('${data.prev}')"> Previous </a></li>`;
+    html += `<li class="page-item ${prevDisabled}"><a class="page-link" onclick="getData('${data.previous}')"> Previous </a></li>`;
     html += `<li class="page-item ${nextDisabled}"><a class="page-link" onclick="getData('${data.next}')"> Next </a></li>`;
 
     document.getElementById("paginacion").innerHTML = html;
